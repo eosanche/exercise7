@@ -10,8 +10,16 @@
     
     .center-div {
       width: 1200px;
-      margin: 20px auto;
-      display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .column {
+      display: grid;
+        grid-template-columns: 1fr 4fr;
+        width: 100%;
+
     }
     
         .left-column {
@@ -22,21 +30,27 @@
        .left-column h1 {
         width: 50%;
       }
-         .right-column {
-        width: 40%;
-           float: right;
+         .prep-column {
+          text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+
       }
     
         .image-right-column {
-        width: 50%;
-          float: right;
+           display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+
       }
     
          .image-size {
-        width: 100%;
-           height: auto;
-      display: block;
-           
+             width: 100%;
+        height: auto;
       }
     
   </style>
@@ -57,8 +71,6 @@
    <div class="image-size">
      
     <img src="recipe-photo-Enhanced-SR.jpg" alt="fried tofu cooked to where it becomes crispy with stir fried spainach sprinkled with seame seeds on top" class="image-size">
- </div>
-  </div>
   </div>
   
     <div class="center-div">
@@ -81,7 +93,7 @@
     </div>
   
    
-      <div class="right-column">
+      <div class="prep-column">
     <h2>
       Preparation
     </h2>
@@ -108,6 +120,8 @@
     <p> Advance preparation: This is a last-minute preparation, but you can have your ingredients prepared well in advance. </p>
   </div>
       </div>
+    </div>
+  </div>
     </body>
 </html>
   
